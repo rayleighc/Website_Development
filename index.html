@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!----Always start with html scripting to include text, images.Then follow by CSS for styling -->
+<!----Always organise content based on flex box.-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Asssessment</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img style="height: 40px;" src="images/ic-logo.svg"/>
+          <h1 class="titleMenu">COLMAR</h1>
+          <h1 style="color: #b3b3b3;font-weight: lighter;">ACADEMY</h1>
+        </div>
+        
+        <nav class="show">
+            <a href="#">On Campus</a>
+            <a href="#">Online</a>
+            <a href="#">Companies</a>
+            <a href="#">Sign in</a>
+        </nav>
+
+        <nav class="hidden">
+          <a href="#"><img style="height: 40px;" src="images/ic-logo.svg"/></a>
+          <a href="#"><img style="height: 40px;" src="images/ic-on-campus.svg"/></a>
+          <a href="#"><img style="height: 40px;" src="images/ic-online.svg"/></a>
+          <a href="#"><img style="height: 40px;" src="images/ic-login.svg"/></a>
+      </nav>
+
+    </header>
+    
+    <section class="section1"> <!----Will declare class as flex box-->
+        <img src="images/banner.jpg"><!----flex object #1-->
+
+        <div class="section1-content"><!----flex box #2 as content are all grouped under div -->
+          <h1 style="font-weight: bolder;">Learn something <br> new everyday</h1><br>
+          <h3>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</h3><br>
+          <a href="#">Start here</a>
+        </div>
+      </section>
+
+    <section class="section2">
+          <div class="s2-leftContent">
+            <img src="images/information-main.jpg" >
+            <h2>It doesn't hurt to keep practicing</h2><br>
+            <p>"Curabitur vitae libero ipsum porttior consequat. Aliquam et commodo
+              lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed
+              consequat ex. Etiam eget magna laoreet efficitur dolo consequat,
+              tristique ligula."</p><br>
+            <h5>Emaunuel, Sr Strategist at Hiring.com</h5>
+          </div>
+
+          <div class="s2-rightContent">
+            
+            <div class="s2-box">
+              <img class="pic_swap1" src="images/information-orientation.jpg">
+              <div class="s2-box_txt">
+                <h3>Orientation Date</h3><br>
+                <p>Tue 10/11 &amp; Wed 10/12: 8am-3pm</p><br>
+                <a href="#">Read more</a>
+              </div>
+            </div>
+
+            <div class="s2-box">
+              <img src="images/information-campus.jpg">
+              <div class="s2-box_txt">
+                <h3>Our campus</h3><br>
+                <p>Find a campus near you</p><br>
+                <a href="#">Read more</a>
+              </div>
+            </div>
+            
+            <div class="s2-box grey1">
+              <img src="images/information-guest-lecture.jpg">
+               <div class="s2-box_txt">
+                <h3>Our guest lecture</h3><br>
+                <p>Join a keynote with Oliver Sacks about music in medical treatment</p><br>
+                <a href="#">Read more</a>
+              </div>
+            </div>
+          </div>
+      </section>
+
+
+<section class="section3">
+
+  <h1>Start learning</h1>
+
+  <div class="hidden hidden_txt_container">
+  <p class="hidden_txt">Software engineering</p>
+ <p class="hidden_txt">Computer art</p>
+  <p class="hidden_txt">Design</p>
+  <p class="hidden_txt">Data</p>
+  <p class="hidden_txt">Business</p>
+  <p class="hidden_txt">Marketing</p>
+</div>
+
+
+<div class="s3-box">
+  <img src="images/course-software.jpg">
+  <div class="s3-box_txt">
+    <h3>Software engineering</h3><br>
+    <p>COURSES</p><br>
+    <p>Web Development, Mobile Development, iOT, APIS</p><br>
+    </div>
+  </div>
+
+  <div class="s3-box">
+    <img src="images/course-computer-art.jpg">
+    <div class="s3-box_txt">
+      <h3>Computer art</h3><br>
+      <p>COURSES</p><br>
+      <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+      </div>
+    </div>
+
+    <div class="s3-box">
+      <img src="images/course-design.jpg">
+      <div class="s3-box_txt">
+        <h3>Design</h3><br>
+        <p>COURSES</p><br>
+        <p>User Experience Design, User Research, Visual Design</p><br>
+        </div>
+      </div>
+
+        <div class="s3-box">
+          <img src="images/course-data.jpg">
+          <div class="s3-box_txt">
+            <h3>Data</h3><br>
+            <p>COURSES</p><br>
+            <p>Data Science, Big Data, SQL, Data Visualization</p><br>
+            </div>
+          </div>
+
+          <div class="s3-box">
+            <img src="images/course-business.jpg">
+            <div class="s3-box_txt">
+              <h3>Business</h3><br>
+              <p>COURSES</p><br>
+              <p>Product Development, Business Development, Startup</p><br>
+              </div>
+            </div>
+
+            <div class="s3-box">
+              <img src="images/course-marketing.jpg">
+              <div class="s3-box_txt">
+                <h3>Marketing</h3><br>
+                <p>COURSES</p><br>
+                <p>Analytics, Content Marketing, Mobile Marketing</p><br>
+                </div>
+              </div>
+
+  
+
+</div>
+
+</section>
+
+
+<section class="section4">
+
+  <h1>Thesis exhibit</h1>
+
+  <div class="s4-leftContent">
+    <video width="100%" controls>
+      <source src="videos/thesis.mp4" type="video/mp4">
+    </video>
+
+    <h2 class="show">Reimagine urban</h2><br>
+    <p class="show">"Curabitur vitae libero ipsum porttior consequat. Aliquam et commodo
+      lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed
+      consequat ex. Etiam eget magna laoreet efficitur dolo consequat,
+      tristique ligula."</p>
+  </div>
+
+  <div class="s4-rightContent show">
+    <div class="s4-box" style="background-color:#cfcccc;">
+      <img src="images/thesis-fisma.jpg">
+       <div class="s4-box_txt">
+        <h3>Fisma: Design and Prototype</h3><br>
+        <p>Designer showcase of new prototype product</p>
+      </div>
+    </div>
+    
+    <div class="s4-box">
+      <img src="images/thesis-now-and-then.jpg">
+      <div class="s4-box_txt">
+        <h3>Now and then</h3><br>
+        <p>Research study about New York</p>
+      </div>
+    </div>
+
+    <!----inviside due to flex box-->
+    <div class="s4-box invisible">
+      <img src="images/thesis-now-and-then.jpg">
+      <div class="s4-box_txt">
+        <h3>Now and then</h3><br>
+        <p>Research study about New York</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+
+  <p>&#169 2016 Colmar Academy. All rights reserved</p>
+<div class="footer_links show">
+  <a href="#">Terms</a>
+  <a href="#">Privacy</a>
+  
+  </div>
+
+</footer>
+
+</body>
+</html>

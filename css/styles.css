@@ -1,0 +1,383 @@
+
+* {
+    box-sizing: border-box; /*always include box-sizing for all elements "*" */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0px; /*remove initial whitespace on the sides when viewing website "*" */
+}
+
+.logo {
+    display: flex;
+    
+    /* default flex-direction: row */
+}
+
+.logo h1{
+   font-size: 28px;
+    
+    /* default flex-direction: row */
+}
+
+.titleMenu{
+
+    font-weight: bolder;
+    
+
+}
+
+header {
+    display: flex;
+    padding-left: 18px;
+    padding-right:18px;
+    height:64px;
+    align-items: center;
+
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+nav a{
+   padding: 8px;
+   text-decoration: none;
+   color: black;
+}
+
+nav a:hover{
+    background-color:yellow;
+ }
+
+.section1 {
+    display:flex;
+    background-color: #b3b3b3;
+    flex-wrap: wrap;
+    padding: 32px 24px;
+    align-items: center;
+  
+}
+
+.section1 img {
+    width:60%; /* Adjust image or objects based on percentage for all screens except for small see @media below */
+}
+
+.section1-content {
+    padding-left: 24px;
+    width:40%;
+}
+
+.section1 h1 {
+    font-size: 35px;
+}
+
+.section1-content h3 {
+    font-size: 22px;
+}
+
+.section1-content a {
+    display: block;
+    background-color: #4a4443;
+    width:70%;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px;
+    color: white;
+}
+
+
+.section2 {
+    display:flex;
+    flex-wrap: wrap; /* Allow for mobile view and content will appear in a collapse manner */
+    padding: 32px 24px;
+    
+}
+
+
+.s2-leftContent {
+    width:60%;
+    
+}
+
+.s2-leftContent img {
+    width:100%;
+    /* image within s2-leftContent(60% width) should occupy 100% width */
+}
+
+.s2-leftContent h2 {
+    font-size: 32px;
+    padding-top:22px;
+    
+    
+}
+
+
+.s2-rightContent{
+    padding-left: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    margin-top:-16px;
+  
+}
+
+.s2-box{
+    display: flex;
+    padding:16px;
+    flex-wrap: wrap;
+    border-bottom-style: solid;
+    border-color: #ededed;
+    align-items: center;
+    
+
+}
+
+.s2-box img{
+    width: 35%;
+    height:auto;
+    
+}
+
+
+.s2-box_txt {
+    padding-left: 20px;
+    width: 65%;
+}
+
+.s2-box_txt h3{
+    font-size: 20px;
+}
+
+.grey1 {
+    background-color:#cfcccc;
+}
+
+
+
+.section3 {
+    display:flex;
+    flex-wrap: wrap; /* Allow for mobile view and content will appear in a collapse manner */
+    padding: 32px 56px;
+    background-color: #ededed;
+    justify-content: center;
+}
+
+.section3 h1{
+    font-size: 32px;
+    flex-basis:100%;
+    text-align:center;
+    padding-bottom:16px;
+    
+}
+
+.s3-box {
+    display: flex;
+    padding:16px;
+    width: 33%;
+    flex-direction: column;
+}
+
+
+
+.s3-box_txt {
+    padding:16px;
+    background-color: #ffffff;
+}
+
+
+
+.section4 {
+    display:flex;
+    flex-wrap: wrap; /* Allow for mobile view and content will appear in a collapse manner */
+    padding: 32px 24px;
+    
+}
+
+
+.section4 h1{
+    font-size: 32px;
+    flex-basis:100%;
+    text-align:center;
+    padding-bottom:16px;
+    
+}
+
+
+.s4-leftContent {
+    width:60%;
+    
+}
+
+
+.s4-leftContent h2 {
+    font-size: 32px;
+    padding-top:16px;
+    
+    
+}
+
+
+.s4-rightContent{
+    padding-left: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+}
+
+.s4-box{
+    display: flex;
+    padding:16px;
+    align-items: flex-start;
+}
+
+.s4-box img{
+    width: 35%;
+    height:auto;
+}
+
+
+.s4-box_txt {
+    padding-left: 20px;
+    width: 65%;
+}
+
+.s4-box_txt h3{
+    font-size: 20px;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+footer {
+    display:flex;
+    flex-wrap: wrap; /* Allow for mobile view and content will appear in a collapse manner */
+    padding: 16px 24px;
+    border-top-style: solid;
+    border-color: #ededed;
+    justify-content: space-between;
+    
+}
+
+.footer_links {
+    display: flex;
+    flex-wrap: wrap;
+    width: 10%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* @media query must always be placed at the last section of CSS */
+
+@media screen and (max-width:800px) {
+    
+    .logo {
+        display: none;
+    }
+
+    .hidden {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .show {
+        display: none;
+    }
+
+    .section1 {
+        display:flex;
+        background-color: #b3b3b3;
+        flex-wrap: wrap;
+        padding: 0px 0px;
+        align-items: center;
+        
+        
+      
+    }
+
+    .section1 img {
+        width:100%; /* Prevent img from sizing down for smaller screens like mobile */
+    }
+
+    .section1-content {
+        padding-top:32px;
+        padding-left: 16px;
+        padding-bottom: 32px;
+        width:100%;  /* Expand the text area to occupy all of smaller screens like mobile */
+    }
+
+
+    .s2-leftContent {
+        display: none; 
+    }
+
+    .s2-rightContent{
+        width:100%;
+    }
+
+
+    .s2-box img{
+      width: 100%;
+        height:auto;
+        
+    }
+
+    .pic_swap1{
+    background-image: url(images/banner.jpg) no-repeat;
+    }
+    
+    .grey1 {
+        background-color: white;
+    }
+
+
+      .section3 {
+          background-color: #ffffff;
+      }
+
+      .s3-box {
+        display: none;
+        
+    }
+
+    .hidden_txt_container {
+        display: flex;
+        flex-direction: column;  
+        width: 100%;
+        margin-top:16px;
+    }
+    
+    .hidden_txt {
+        display: flex;
+        font-size: 25px;
+        padding:16px;
+        background-color: #ededed;
+        font-weight: bolder;
+        margin-bottom:8px;
+    
+    }
+
+
+    .section4 {
+        display:flex;
+        flex-wrap: wrap; /* Allow for mobile view and content will appear in a collapse manner */
+        padding: 32px 0px;
+        
+    }
+    .s4-leftContent{
+        width: 100%;
+    }
+
+
+
+
+}
